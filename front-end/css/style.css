@@ -40,6 +40,14 @@ body {
 .navbar nav a:hover {
     color: #28a745;
 }
+#google_translate_element select {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
 
 /* Hero Section */
 .hero-section {

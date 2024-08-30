@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.feedback-container {
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.feed{
+    background: #000;
+}
+
+/* Animation for the container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Star Rating Styles */
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.rating label {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    transform: scale(1.2);
+}
+
+.star {
+    font-size: 30px;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+input[type="radio"]:checked ~ .star {
+    color: #f5b50a;
+}
+
+/* Feedback Text Area */
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Success and Error Messages */
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.message-visible {
+    opacity: 1;
+}
