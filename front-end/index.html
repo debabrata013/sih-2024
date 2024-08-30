@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck Tracking - Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script> <!-- Google Maps API -->
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Truck Tracking</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Track</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <h1>Real-time Truck Tracking</h1>
+        <p>Efficient, Accurate, and Reliable Truck Tracking Solutions</p>
+        <button onclick="scrollToMap()">Start Tracking</button>
+    </div>
+    
+    <section id="map-section" class="map-section">
+        <h2>Track Your Truck</h2>
+        <input type="text" id="search-bar" placeholder="Enter Truck ID or Destination">
+        <button onclick="searchTruck()">Search</button>
+        <div id="map"></div>
+    </section>
+
+    <section class="features-section">
+        <h2>Our Features</h2>
+        <div class="feature-card">
+            <h3>Real-Time Tracking</h3>
+            <p>Track your trucks in real-time with our advanced tracking technology.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Detailed Analytics</h3>
+            <p>Get detailed analytics and reports to optimize your fleet management.</p>
+        </div>
+        <div class="feature-card">
+            <h3>24/7 Support</h3>
+            <p>Our support team is available 24/7 to assist you with any issues.</p>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Get Started Today</h2>
+        <p>Sign up now to start tracking your trucks and experience the benefits of our platform.</p>
+        <button onclick="window.location.href='signup.html'">Sign Up</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Truck Tracking. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
