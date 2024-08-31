@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet Management Dashboard</title>
+  <link rel="stylesheet" href="./css/fleet.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Fleet Management</div>
+    <nav>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Alerts</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+
+  <!-- Main Dashboard Section -->
+  <main>
+    <section id="map-container">
+      <div id="map"></div> <!-- Map Placeholder -->
+    </section>
+    <section id="overview-panels">
+      <!-- Truck Overview Panel -->
+      <div class="panel">
+        <h3>Truck Overview</h3>
+        <div class="truck-details">
+          <!-- Dynamic Content for Trucks -->
+        </div>
+      </div>
+      
+      <!-- Driver Status Panel -->
+      <div class="panel">
+        <h3>Driver Status</h3>
+        <div class="driver-details">
+          <!-- Dynamic Content for Drivers -->
+        </div>
+      </div>
+    </section>
+    
+    <!-- Alerts and Reports Section -->
+    <section id="alerts-reports">
+      <h3>Alerts</h3>
+      <div id="alerts">
+        <!-- Dynamic Content for Alerts -->
+      </div>
+      <h3>Reports</h3>
+      <canvas id="reports-chart"></canvas> <!-- Placeholder for Chart -->
+    </section>
+  </main>
+<!-- Alerts and Reports Section -->
+<section id="alerts-reports">
+  <div class="alerts-section">
+    <h3>Recent Alerts</h3>
+    <ul id="alerts-list">
+      <!-- Dynamic Content for Alerts -->
+      <li class="alert-item">
+        <span class="alert-icon">⚠️</span>
+        <span class="alert-text">Low Fuel Alert: Truck 12</span>
+      </li>
+      <li class="alert-item">
+        <span class="alert-icon">🛠️</span>
+        <span class="alert-text">Scheduled Maintenance: Truck 5</span>
+      </li>
+      <li class="alert-item">
+        <span class="alert-icon">🚚</span>
+        <span class="alert-text">Route Deviation: Truck 8</span>
+      </li>
+      <!-- More alerts will be dynamically added here -->
+    </ul>
+  </div>
+
+  <div class="reports-section">
+    <h3>Reports</h3>
+    <div class="chart-container">
+      <canvas id="fuelConsumptionChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="routeEfficiencyChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="truckUsageChart"></canvas>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2024 Fleet Management Dashboard. All rights reserved.</p>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
